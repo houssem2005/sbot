@@ -1,0 +1,12 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const client2 = new Discord.Client();
+
+client.on("ready", () => {
+setInterval( () => {
+client.channels.get("???? ?????").send("$daily")
+}, 86400000)
+});
+
+client.login(process.env.TOKEN);// ?? ???? ???? ???
+client2.login(process.env.TOKEN2);// ?? ???? ???? ???
